@@ -6,6 +6,11 @@ const content = document.querySelector("#content");
 content.classList.add("home");
 content.innerHTML = marked.parse(markdown).replaceAll('src="public/', 'src="/');
 
+content.querySelectorAll("a[href]").forEach((link) => {
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+});
+
 content.querySelectorAll("table").forEach((table) => {
   const headers = [...table.querySelectorAll("th")].map((th) => th.textContent);
   if (!headers.includes("Project")) {
