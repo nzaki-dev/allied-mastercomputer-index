@@ -185,7 +185,7 @@ body {
 
 .company-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1px;
   margin: 1.25rem 0 2.5rem;
   background: var(--line);
