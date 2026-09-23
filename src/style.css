@@ -60,18 +60,6 @@ body {
   line-height: 1.6;
 }
 
-#content.home h1 + p sub {
-  display: block;
-  margin-top: 0.4rem;
-  color: #555;
-  font-size: 0.8rem;
-  vertical-align: baseline;
-}
-
-#content.home h1 + p br {
-  display: none;
-}
-
 #content.home h2,
 #content.home h2 ~ *:not(.site-footer) {
   text-align: left;
@@ -236,9 +224,20 @@ body {
   justify-content: center;
   gap: 0.35rem;
   width: 100%;
-  margin: 8rem auto 0;
+  margin: 3.5rem auto 0;
   padding: 0 0 0.5rem;
   text-align: center;
+}
+
+.site-credit {
+  margin: 0 0 3rem;
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.site-credit sub {
+  font-size: inherit;
+  vertical-align: baseline;
 }
 
 .site-avatar {

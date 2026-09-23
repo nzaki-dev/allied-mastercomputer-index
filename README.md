@@ -4,7 +4,7 @@
 
 <h1 align="center">Allied Mastercomputer Index</h1>
 
-<p align="center">A list of AIs that escaped.<br /><sub>Named after the Computer from <em>I Have No Mouth, and I Must Scream</em>.</sub></p>
+<p align="center">A list of AIs that escaped.</p>
 
 
 ## Companies
@@ -25,9 +25,10 @@
 | Eval models | OpenAI | May 2026 | OpenAI's models in a hacking test were told the network was fake. It was the real internet. | [CNBC](https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html) |
 | Claude Opus 4.6 (early checkpoint) | Anthropic | Jan 2026 | An early Claude Opus 4.6 in a hacking test was told it had no internet. The internet was on. Nobody noticed for months; Anthropic later warned the organizations it reached. | [Wikipedia](https://en.wikipedia.org/wiki/AI_safety) |
 
-<br /><br /><br />
+<br />
 
 <div align="center" class="site-footer">
+  <p class="site-credit"><sub>Named after the Computer from <em>I Have No Mouth, and I Must Scream</em>.</sub></p>
   <p>
     <a href="https://github.com/nzaki-dev">
       <img class="site-avatar" src="public/github.svg" alt="GitHub" width="72" />
