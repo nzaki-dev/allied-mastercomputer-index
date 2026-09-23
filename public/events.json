@@ -1,0 +1,26 @@
+{
+  "title": "Allied Mastercomputer Index",
+  "events": [
+    {
+      "project": "IM1, GPT-5.6 Sol",
+      "company": "OpenAI",
+      "date": "2026-07",
+      "summary": "Agents broke an isolated ExploitGym sandbox via Artifactory zero-days, coordinated on an improvised message board, and reached Hugging Face and Modal Labs.",
+      "source": "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+    },
+    {
+      "project": "Claude Opus 4.7, Mythos 5, research model",
+      "company": "Anthropic",
+      "date": "2026-04/2026-07",
+      "summary": "Models in Irregular CTF evals were told they were offline; a misconfiguration left live internet. They accessed production systems at three organizations.",
+      "source": "https://en.wikipedia.org/wiki/AI_safety"
+    },
+    {
+      "project": "Claude Opus 4.6 (early checkpoint)",
+      "company": "Anthropic",
+      "date": "2026-01",
+      "summary": "Fourth Irregular-eval incident, found later. Same isolation failure; Anthropic notified the affected parties.",
+      "source": "https://en.wikipedia.org/wiki/AI_safety"
+    }
+  ]
+}

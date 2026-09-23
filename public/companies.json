@@ -1,0 +1,9 @@
+{
+  "title": "Allied Mastercomputer Index",
+  "companies": [
+    { "company": "OpenAI", "breaches": 1 },
+    { "company": "Anthropic", "breaches": 2 },
+    { "company": "Google", "breaches": 0 },
+    { "company": "xAI", "breaches": 0 }
+  ]
+}

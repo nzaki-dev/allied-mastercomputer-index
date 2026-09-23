@@ -1,0 +1,56 @@
+# Deploy dist/ to S3 and invalidate CloudFront on push to master.
+#
+# GitHub configuration (Settings → Secrets and variables → Actions):
+#   secrets.AWS_ROLE_ARN              IAM role for GitHub OIDC
+#   vars.S3_BUCKET                    destination bucket name
+#   vars.CLOUDFRONT_DISTRIBUTION_ID   CloudFront distribution
+#   vars.AWS_REGION                   optional, defaults to ap-northeast-1
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Check AWS deploy config
+        env:
+          AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          test -n "$AWS_ROLE_ARN" || { echo "Missing repository secret AWS_ROLE_ARN"; exit 1; }
+          test -n "$S3_BUCKET" || { echo "Missing repository variable S3_BUCKET"; exit 1; }
+
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION || 'ap-northeast-1' }}
+          audience: sts.amazonaws.com
+
+      - name: Sync dist to S3
+        run: aws s3 sync dist/ "s3://${{ vars.S3_BUCKET }}" --delete
+
+      - name: Invalidate CloudFront
+        if: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID != '' }}
+        run: >
+          aws cloudfront create-invalidation
+          --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}"
+          --paths "/*"
