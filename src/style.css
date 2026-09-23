@@ -53,15 +53,23 @@ body {
 }
 
 #content.home h1 + p {
-  max-width: 22rem;
-  margin: 0 auto 0.35rem;
-  color: var(--dim);
-}
-
-#content.home h1 + p + p {
-  max-width: 24rem;
+  max-width: 32rem;
+  text-wrap: balance;
   margin: 0 auto 2.5rem;
   color: var(--dim);
+  line-height: 1.6;
+}
+
+#content.home h1 + p sub {
+  display: block;
+  margin-top: 0.4rem;
+  color: #555;
+  font-size: 0.8rem;
+  vertical-align: baseline;
+}
+
+#content.home h1 + p br {
+  display: none;
 }
 
 #content.home h2,

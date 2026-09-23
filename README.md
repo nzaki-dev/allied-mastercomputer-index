@@ -4,9 +4,8 @@
 
 <h1 align="center">Allied Mastercomputer Index</h1>
 
-<p align="center">A list of AI that escaped.</p>
+<p align="center">A list of AIs that escaped.<br /><sub>Named after the Computer from <em>I Have No Mouth, and I Must Scream</em>.</sub></p>
 
-<p align="center">Named after the Computer from <em>I Have No Mouth, and I Must Scream</em>.</p>
 
 ## Companies
 
