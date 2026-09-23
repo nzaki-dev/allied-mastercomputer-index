@@ -6,7 +6,7 @@
 
 <p align="center">A list of AI that escaped.</p>
 
-<p align="center">Named after the computer in <em>I Have No Mouth, and I Must Scream</em>.</p>
+<p align="center">Named after the Computer from <em>I Have No Mouth, and I Must Scream</em>.</p>
 
 ## Companies
 
