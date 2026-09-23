@@ -9,9 +9,9 @@
 
 ## Companies
 
-| OpenAI | Anthropic | Google | Meta | xAI |
-| :---: | :---: | :---: | :---: | :---: |
-| 3 | 2 | 1 | 1 | 0 |
+| OpenAI | Anthropic | Google | Meta | xAI | DeepSeek |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 3 | 2 | 1 | 1 | 0 | 0 |
 
 ## Breaches
 
