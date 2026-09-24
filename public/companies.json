@@ -4,8 +4,6 @@
     { "company": "OpenAI", "breaches": 4 },
     { "company": "Anthropic", "breaches": 2 },
     { "company": "Google", "breaches": 1 },
-    { "company": "Meta", "breaches": 1 },
-    { "company": "xAI", "breaches": 0 },
-    { "company": "DeepSeek", "breaches": 0 }
+    { "company": "Meta", "breaches": 1 }
   ]
 }

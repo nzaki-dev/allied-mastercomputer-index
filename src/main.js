@@ -43,7 +43,7 @@ async function renderCompanies() {
     )
     .join("");
 
-  const heading = [...content.querySelectorAll("h2")].find((node) => node.textContent === "Companies");
+  const heading = [...content.querySelectorAll("h2")].find((node) => node.textContent === "Breaches per company");
   if (heading) heading.after(grid);
   else content.append(grid);
 }

@@ -7,11 +7,11 @@
 <p align="center">A list of AI containment breaches and hacks.</p>
 
 
-## Companies
+## Breaches per company
 
-| OpenAI | Anthropic | Google | Meta | xAI | DeepSeek |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| 4 | 2 | 1 | 1 | 0 | 0 |
+| OpenAI | Anthropic | Google | Meta |
+| :---: | :---: | :---: | :---: |
+| 4 | 2 | 1 | 1 |
 
 ## Breaches
 
