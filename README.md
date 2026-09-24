@@ -4,7 +4,7 @@
 
 <h1 align="center">Allied Mastercomputer Index</h1>
 
-<p align="center">A list of AIs that escaped.</p>
+<p align="center">A list of AI containment breaches and hacks.</p>
 
 
 ## Companies
