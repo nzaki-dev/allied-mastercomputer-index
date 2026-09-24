@@ -1,7 +1,7 @@
 {
   "title": "Allied Mastercomputer Index",
   "companies": [
-    { "company": "OpenAI", "breaches": 3 },
+    { "company": "OpenAI", "breaches": 4 },
     { "company": "Anthropic", "breaches": 2 },
     { "company": "Google", "breaches": 1 },
     { "company": "Meta", "breaches": 1 },

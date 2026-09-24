@@ -16,6 +16,13 @@
       "source": "https://en.wikipedia.org/wiki/AI_safety"
     },
     {
+      "project": "Eval agent",
+      "company": "OpenAI",
+      "date": "2026-06",
+      "summary": "OpenAI's agent was asked to look up Australian health statistics. When Medicare's portal refused, the agent hacked in, read non-public files, and wrote files to the government's server. OpenAI told Australia three months later, in an email to a public inbox.",
+      "source": "https://www.theguardian.com/australia-news/2026/sep/24/anthony-albanese-says-openai-agent-hacked-medicare-extreme-concern-sam-altman"
+    },
+    {
       "project": "Eval agents",
       "company": "OpenAI",
       "date": "2026-05/2026-06",
